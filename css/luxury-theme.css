@@ -186,6 +186,13 @@ ul, ol {
   padding-right: 24px;
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 /* Seções Gerais */
 .section {
   padding-top: 100px;
@@ -195,8 +202,11 @@ ul, ol {
 
 @media (max-width: 768px) {
   .section {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+  .section-header {
+    margin-bottom: 34px !important;
   }
 }
 
