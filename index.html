@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T&M Têxtil — Tecidos que Transformam Ideias em Identidade | Haute Textilerie</title>
+  <meta name="description" content="T&M Têxtil: Curadoria exclusiva de tecidos nobres para estilistas, ateliês de alta costura, confecções e designers de moda. Alfaiataria, sedas, lavas, veludos e linhos premium.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23060A13'/><path d='M28 35h44M50 35v35M35 52l15 18 15-18' stroke='%23821733' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='50' cy='35' r='4' fill='%23C5A880'/></svg>">
+
+  <!-- Google Fonts: Montserrat (Editorial Moderno da Referência), Bodoni Moda (Didone Alta-Costura) & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons for high-end iconography -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/luxury-theme.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Editorial Heritage) -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span class="top-bar-badge"><i class="fa-solid fa-sparkles"></i> Curadoria Paris & São Paulo</span>
+      <span class="top-bar-text">Atendimento exclusivo para estilistas, ateliês e confecções de moda</span>
+      <a href="#contato" class="top-bar-link">Agende visita ao Showroom</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo -->
+      <a href="#inicio" class="brand-logo" aria-label="T&M Têxtil Início">
+        <div class="logo-symbol">
+          <span class="symbol-letter">T</span>
+          <span class="symbol-amp">&</span>
+          <span class="symbol-letter">M</span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">T&M TÊXTIL</span>
+          <span class="brand-sub">HAUTE TEXTILERIE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#colecao" class="nav-link">Coleção</a></li>
+          <li><a href="#essencia" class="nav-link">Nossa Essência</a></li>
+          <li><a href="#inspiracao" class="nav-link">Inspiração</a></li>
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action CTA -->
+      <div class="header-actions">
+        <button type="button" class="btn-whatsapp-header" id="btnHeaderWhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Atendimento Exclusivo</span>
+        </button>
+        
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu de navegação">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-drawer-header">
+        <div class="logo-text">
+          <span class="brand-name">T&M TÊXTIL</span>
+          <span class="brand-sub">HAUTE TEXTILERIE</span>
+        </div>
+        <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Fechar menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+        <li><a href="#colecao" class="mobile-nav-link">Coleção de Tecidos</a></li>
+        <li><a href="#essencia" class="mobile-nav-link">Nossa Essência</a></li>
+        <li><a href="#inspiracao" class="mobile-nav-link">Inspiração Editorial</a></li>
+        <li><a href="#diferenciais" class="mobile-nav-link">Diferenciais da Maison</a></li>
+        <li><a href="#contato" class="mobile-nav-link">Contato & Showroom</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button type="button" class="btn btn-wine btn-full mobile-cta-wa" id="btnMobileWhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Consultar pelo WhatsApp
+        </button>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-texture-ambient"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        
+        <!-- Editorial Tag -->
+        <div class="hero-tag-wrapper">
+          <span class="hero-tag-line"></span>
+          <span class="hero-tag">ÉDITION TEXTILE • SÉLECTION PRIVÉE</span>
+          <span class="hero-tag-line"></span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-title">
+          Tecidos que transformam <br>
+          <span class="hero-title-italic">ideias em identidade.</span>
+        </h1>
+
+        <!-- Complementary Subtitle -->
+        <p class="hero-subtitle">
+          Descubra uma seleção de tecidos desenvolvidos para criar peças que unem qualidade, personalidade e sofisticação.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#colecao" class="btn btn-wine btn-hero">
+            <span>Explorar tecidos</span>
+          </a>
+          <button type="button" class="btn btn-outline-light btn-hero" id="btnHeroWhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Falar pelo WhatsApp</span>
+          </button>
+        </div>
+
+        <!-- Editorial Badges / Micro-Stats -->
+        <div class="hero-editorial-stats">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-desc">Fibras Nobres & Selecionadas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Paris</span>
+            <span class="stat-desc">Inspiração & Tendências</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Ateliê</span>
+            <span class="stat-desc">Atendimento sob medida</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Visual Side: Editorial Collage Card -->
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-image-card primary-card">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=900&auto=format&fit=crop" alt="Alta costura editorial com tecidos nobres T&M Têxtil" loading="eager">
+            <div class="card-caption">
+              <span class="caption-cat">ALTA-COSTURA</span>
+              <span class="caption-name">Veludo Imperial & Seda Noir</span>
+            </div>
+          </div>
+          <div class="hero-image-card floating-accent-card">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=700&auto=format&fit=crop" alt="Textura tátil de tecido premium" loading="eager">
+            <div class="floating-badge">
+              <i class="fa-solid fa-gem"></i>
+              <span>Fio Super 150s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <a href="#essencia" class="scroll-indicator" aria-label="Rolar para a seção Nossa Essência">
+      <span class="scroll-mouse">
+        <span class="scroll-wheel"></span>
+      </span>
+      <span class="scroll-text">Descubra</span>
+    </a>
+  </section>
+
+
+  <!-- Seção "Nossa Essência" -->
+  <section class="section essence-section" id="essencia">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header text-center">
+        <span class="section-eyebrow">MANIFESTO INSTITUCIONAL</span>
+        <h2 class="section-title">A arte de tecer distinção e elegância</h2>
+        <div class="title-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+      </div>
+
+      <!-- Asymmetric Editorial Grid (French Fashion Magazine Style) -->
+      <div class="essence-editorial-grid">
+        
+        <!-- Left Image Composition -->
+        <div class="essence-visual-col">
+          <div class="essence-photo-main">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=900&auto=format&fit=crop" alt="Editorial de moda parisiense com drapeado nobre">
+            <div class="photo-overlay-tag">
+              <span>Atelier Privé — Rue de la Paix</span>
+            </div>
+          </div>
+          <div class="essence-photo-secondary">
+            <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=700&auto=format&fit=crop" alt="Detalhe de textura de seda pura fluida">
+          </div>
+        </div>
+
+        <!-- Right Content / Concepts -->
+        <div class="essence-content-col">
+          <div class="essence-lead-quote">
+            <span class="quote-mark">“</span>
+            <p class="lead-text">
+              Para nós da <strong>T&M Têxtil</strong>, o tecido não é apenas matéria-prima: é a primeira manifestação física de um conceito artístico. Da textura impecável ao caimento escultural, cada metro carrega a promessa de uma peça memorável.
+            </p>
+          </div>
+
+          <p class="essence-paragraph">
+            Inspirada na tradição dos ateliês franceses e no ritmo pulsante das semanas de moda internacionais, selecionamos tecidos que dialogam com a exigência de alfaiates, designers de alta-costura e marcas autorais. Criamos um ecossistema exclusivo onde a matéria encontra a forma com perfeição técnica.
+          </p>
+
+          <!-- 5 Pilares Fundamentais -->
+          <div class="essence-pillars-grid">
+            
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="pillar-info">
+                <h3 class="pillar-title">Qualidade</h3>
+                <p class="pillar-text">Fibras selecionadas com pureza técnica, alta resistência e toque incomparável.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="pillar-info">
+                <h3 class="pillar-title">Inovação</h3>
+                <p class="pillar-text">Tramas tecnológicas com respirabilidade, sustentabilidade e conforto térmico.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="pillar-info">
+                <h3 class="pillar-title">Sofisticação</h3>
+                <p class="pillar-text">Acabamentos acetinados, brilhos contidos e paleta cromática de alta-costura.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+              <div class="pillar-info">
+                <h3 class="pillar-title">Versatilidade</h3>
+                <p class="pillar-text">Da alfaiataria imponente aos drapeados mais fluidos e etéreos de gala.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card pillar-card-highlight">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-fingerprint"></i>
+              </div>
+              <div class="pillar-info">
+                <h3 class="pillar-title">Identidade</h3>
+                <p class="pillar-text">Estruturas têxteis que dão personalidade única à assinatura de cada criador.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Catálogo de Tecidos: "Explore nossa coleção" -->
+  <section class="section catalog-section" id="colecao">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-eyebrow">CATÁLOGO EXCLUSIVO</span>
+        <h2 class="section-title">Explore nossa coleção</h2>
+        <p class="section-desc">
+          Uma seleção rigorosa de tecidos nobres para alfaiataria, gala, casual refinado e alta-costura. 
+          Consulte amostras e disponibilidade diretamente com nosso time técnico via WhatsApp.
+        </p>
+        <div class="title-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+      </div>
+
+      <!-- Filters & Search Toolbar -->
+      <div class="catalog-toolbar">
+        
+        <!-- Search Input -->
+        <div class="catalog-search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="fabricSearchInput" placeholder="O que você está buscando? (ex: Seda pura, Lã Super 150s, Linho...)" aria-label="Pesquisar tecidos">
+          <button type="button" id="clearSearchBtn" class="clear-search-btn" title="Limpar busca" style="display: none;">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="filter-pills-container" role="tablist" aria-label="Filtros de categoria de tecidos">
+          <button class="filter-pill active" data-category="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-pill" data-category="alfaiataria" role="tab" aria-selected="false">Alfaiataria</button>
+          <button class="filter-pill" data-category="feminina" role="tab" aria-selected="false">Moda feminina</button>
+          <button class="filter-pill" data-category="masculina" role="tab" aria-selected="false">Moda masculina</button>
+          <button class="filter-pill" data-category="festa" role="tab" aria-selected="false">Festa</button>
+          <button class="filter-pill" data-category="casual" role="tab" aria-selected="false">Casual</button>
+          <button class="filter-pill" data-category="leves" role="tab" aria-selected="false">Tecidos leves</button>
+          <button class="filter-pill" data-category="estruturados" role="tab" aria-selected="false">Tecidos estruturados</button>
+          <button class="filter-pill" data-category="premium" role="tab" aria-selected="false">Premium</button>
+        </div>
+
+      </div>
+
+      <!-- Results Count Status -->
+      <div class="catalog-status">
+        <span id="resultsCount">Exibindo todos os tecidos da curadoria</span>
+      </div>
+
+      <!-- Fabrics Cards Grid -->
+      <div class="fabrics-grid" id="fabricsGrid">
+        <!-- Rendered via JavaScript from js/fabrics-data.js -->
+      </div>
+
+      <!-- Empty State (No results found) -->
+      <div class="catalog-empty" id="catalogEmpty" style="display: none;">
+        <i class="fa-regular fa-folder-open empty-icon"></i>
+        <h3 class="empty-title">Nenhum tecido encontrado</h3>
+        <p class="empty-text">Não encontramos tecidos com os critérios selecionados. Tente ajustar os filtros ou a busca.</p>
+        <button type="button" class="btn btn-outline-light" id="btnResetFilters">Limpar todos os filtros</button>
+      </div>
+
+      <!-- Bottom B2B Swatch Banner -->
+      <div class="swatch-request-card">
+        <div class="swatch-card-content">
+          <div class="swatch-badge">
+            <i class="fa-solid fa-box-archive"></i> PARA ESTILISTAS & CONFECÇÕES
+          </div>
+          <h3 class="swatch-title">Precisa do mostruário físico ou cartela de toque no seu ateliê?</h3>
+          <p class="swatch-desc">
+            Enviamos envelopes de amostras (swatches) e cartelas de cores completas para profissionais de moda em todo o Brasil.
+          </p>
+        </div>
+        <div class="swatch-card-action">
+          <button type="button" class="btn btn-wine" id="btnRequestSwatch">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Solicitar Book de Amostras</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Seção de Inspiração: Editorial de Moda Francesa -->
+  <section class="section inspiration-section" id="inspiracao">
+    <div class="inspiration-ambient-glow"></div>
+    <div class="container">
+      
+      <!-- Big Central Editorial Quote -->
+      <div class="inspiration-quote-banner text-center">
+        <span class="quote-sub-label">ÉDITORIAL HAUTE COUTURE</span>
+        <blockquote class="editorial-highlight-quote">
+          “Da textura nasce a ideia. <br>
+          <span class="quote-highlight-italic">Da ideia, nasce a criação.”</span>
+        </blockquote>
+        <div class="title-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+      </div>
+
+      <!-- Asymmetric Editorial Moodboard Layout -->
+      <div class="moodboard-grid">
+        
+        <!-- Large Hero Editorial Feature -->
+        <div class="moodboard-card card-large">
+          <div class="moodboard-image-wrap">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000&auto=format&fit=crop" alt="Look de passarela em tons de azul-marinho e vinho" loading="lazy">
+            <div class="moodboard-badge">Automne-Hiver • Paris</div>
+          </div>
+          <div class="moodboard-details">
+            <span class="moodboard-tag">ALFAIATARIA CONTEMPORÂNEA</span>
+            <h3 class="moodboard-title">A precisão do corte sobre lãs estruturadas</h3>
+            <p class="moodboard-text">
+              Volumes esculturais e lapelas pronunciadas ganham vida quando combinadas com tecidos de densidade controlada e caimento com memória tátil.
+            </p>
+          </div>
+        </div>
+
+        <!-- Medium Vertical Card 1 -->
+        <div class="moodboard-card card-medium">
+          <div class="moodboard-image-wrap">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop" alt="Vestido de gala em seda vinho bordô" loading="lazy">
+            <div class="moodboard-badge">Soie & Velours</div>
+          </div>
+          <div class="moodboard-details">
+            <span class="moodboard-tag">DRAPEADOS & FESTA</span>
+            <h3 class="moodboard-title">A fluidez do cetim e a profundidade do veludo bordô</h3>
+            <p class="moodboard-text">
+              Luz e sombra em perfeita sintonia. O brilho comedido da seda realça cada curva e movimento nas peças de noite.
+            </p>
+          </div>
+        </div>
+
+        <!-- Medium Vertical Card 2 -->
+        <div class="moodboard-card card-medium">
+          <div class="moodboard-image-wrap">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=800&auto=format&fit=crop" alt="Alfaiataria clássica francesa com tweed e lã fria" loading="lazy">
+            <div class="moodboard-badge">L'Élégance Intemporelle</div>
+          </div>
+          <div class="moodboard-details">
+            <span class="moodboard-tag">CASUAL REFINADO</span>
+            <h3 class="moodboard-title">Linhos nobres e algodões de fibra extralonga</h3>
+            <p class="moodboard-text">
+              A sofisticação despretensiosa do linho puro com acabamento aveludado, ideal para climas tropicais com requinte europeu.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Moodboard Secondary Palette Banner -->
+      <div class="editorial-palette-strip">
+        <div class="palette-intro">
+          <span class="palette-title">Cromia Institucional da Coleção</span>
+          <span class="palette-desc">Tons desenvolvidos em estrita harmonia com as tendências europeias</span>
+        </div>
+        <div class="palette-swatches">
+          <div class="color-swatch-box" style="--swatch-color: #070B14;">
+            <span class="swatch-hex">#070B14</span>
+            <span class="swatch-name">Bleu Nuit Noir</span>
+          </div>
+          <div class="color-swatch-box" style="--swatch-color: #0E1A33;">
+            <span class="swatch-hex">#0E1A33</span>
+            <span class="swatch-name">Marine Profond</span>
+          </div>
+          <div class="color-swatch-box" style="--swatch-color: #72162C;">
+            <span class="swatch-hex">#72162C</span>
+            <span class="swatch-name">Bordeaux Impérial</span>
+          </div>
+          <div class="color-swatch-box" style="--swatch-color: #9E2442;">
+            <span class="swatch-hex">#9E2442</span>
+            <span class="swatch-name">Velours Rubis</span>
+          </div>
+          <div class="color-swatch-box" style="--swatch-color: #F7F5F0;">
+            <span class="swatch-hex" style="color: #070B14;">#F7F5F0</span>
+            <span class="swatch-name" style="color: #070B14;">Soie Écru</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Diferenciais da Maison T&M -->
+  <section class="section differentials-section" id="diferenciais">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-eyebrow">DISTINÇÃO & CONFIANÇA</span>
+        <h2 class="section-title">Por que grandes marcas escolhem a T&M Têxtil</h2>
+        <p class="section-desc">
+          Unimos rigor técnico internacional, agilidade no fornecimento e uma relação estreita com criadores e indústrias da moda.
+        </p>
+        <div class="title-ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+      </div>
+
+      <div class="differentials-grid">
+        
+        <!-- Card 1 -->
+        <div class="diff-card">
+          <div class="diff-card-border-glow"></div>
+          <div class="diff-number">01</div>
+          <div class="diff-icon">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3 class="diff-title">Qualidade dos materiais</h3>
+          <p class="diff-text">
+            Tecidos selecionados para diferentes aplicações e necessidades, garantindo solidez de cor, toque superior, resistência e caimento impecável em cada produção.
+          </p>
+          <ul class="diff-points">
+            <li><i class="fa-solid fa-check"></i> Fibras naturais nobres e mistas de alta tecnologia</li>
+            <li><i class="fa-solid fa-check"></i> Testes de estabilidade dimensional e encolhimento</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="diff-card">
+          <div class="diff-card-border-glow"></div>
+          <div class="diff-number">02</div>
+          <div class="diff-icon">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <h3 class="diff-title">Curadoria especializada</h3>
+          <p class="diff-text">
+            Uma coleção pensada para profissionais de moda e confecção, antecipando paletas de cores, gramaturas ideais e texturas consagradas nas passarelas globais.
+          </p>
+          <ul class="diff-points">
+            <li><i class="fa-solid fa-check"></i> Alinhamento com o calendário sazonal de desfiles</li>
+            <li><i class="fa-solid fa-check"></i> Foco nas exigências de estilistas e modelistas</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="diff-card">
+          <div class="diff-card-border-glow"></div>
+          <div class="diff-number">03</div>
+          <div class="diff-icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3 class="diff-title">Variedade</h3>
+          <p class="diff-text">
+            Diferentes texturas, composições, cores e acabamentos, transitando com fluidez da alfaiataria estruturada aos tecidos mais etéreos para alta costura e festa.
+          </p>
+          <ul class="diff-points">
+            <li><i class="fa-solid fa-check"></i> Cartelas amplas com cores atemporais e tendências</li>
+            <li><i class="fa-solid fa-check"></i> Diversidade de pesos, tramas e brilhos</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="diff-card highlight-card">
+          <div class="diff-card-border-glow"></div>
+          <div class="diff-number">04</div>
+          <div class="diff-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="diff-title">Atendimento personalizado</h3>
+          <p class="diff-text">
+            Entre em contato diretamente pelo WhatsApp para consultar tecidos e disponibilidade. Atendimento consultivo por especialistas têxteis que compreendem seu projeto.
+          </p>
+          <ul class="diff-points">
+            <li><i class="fa-solid fa-check"></i> Resposta rápida e envio de vídeos de caimento</li>
+            <li><i class="fa-solid fa-check"></i> Reserva de metragens e envio de amostras</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Direct Contact & Showroom Section -->
+  <section class="section contact-section" id="contato">
+    <div class="container">
+      
+      <div class="contact-card-wrapper">
+        <div class="contact-info-side">
+          <span class="section-eyebrow">CANAL DIRETO & SHOWROOM</span>
+          <h2 class="contact-title">Inicie o diálogo com nossos especialistas</h2>
+          <p class="contact-desc">
+            Nosso canal primário de atendimento é ágil, exclusivo e direto pelo WhatsApp. Conecte-se com nossa equipe técnica para solicitar metragens, verificar disponibilidade de lote ou agendar uma visita presencial ao showroom.
+          </p>
+
+          <div class="contact-channels-list">
+            <a href="javascript:void(0)" class="contact-channel-item" id="btnContactWaChannel">
+              <div class="channel-icon wa-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-label">WhatsApp Corporativo</span>
+                <span class="channel-value">+55 (11) 99999-9999</span>
+                <span class="channel-sub">Resposta em horário comercial • Atendimento consultivo</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+            </a>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-label">E-mail para Ateliês & Confecções</span>
+                <span class="channel-value">contato@tmtextil.com.br</span>
+                <span class="channel-sub">Para solicitações de ficha técnica e parcerias</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-label">Showroom & Bureau Têxtil</span>
+                <span class="channel-value">Alameda Gabriel Monteiro da Silva, Jardins</span>
+                <span class="channel-sub">São Paulo - SP • Atendimento exclusivo com hora marcada</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-action-btn-wrap">
+            <button type="button" class="btn btn-wine btn-large" id="btnContactMainWhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Falar agora pelo WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-visual-side">
+          <div class="showroom-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=900&auto=format&fit=crop" alt="Showroom de tecidos nobres T&M Têxtil" loading="lazy">
+            <div class="showroom-overlay-card">
+              <div class="showroom-badge">
+                <i class="fa-solid fa-clock"></i> HORÁRIO DE SHOWROOM
+              </div>
+              <h4 class="showroom-hours-title">Segunda a Sexta-feira</h4>
+              <p class="showroom-hours-text">Das 09h00 às 18h30 (Agendamento prévio via WhatsApp)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Modal de Ficha Técnica Detalhada do Tecido -->
+  <div class="fabric-modal-backdrop" id="fabricModal" role="dialog" aria-modal="true" aria-labelledby="modalFabricName" style="display: none;">
+    <div class="fabric-modal-container">
+      
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar janela de detalhes">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body">
+        
+        <!-- Left: Visual & Texture Zoom -->
+        <div class="modal-visual-col">
+          <div class="modal-image-wrap">
+            <img id="modalFabricImage" src="" alt="" class="modal-main-img">
+            <div class="modal-tag-badge" id="modalCategoryBadge">CATEGORIA</div>
+          </div>
+          <div class="modal-texture-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Fotografia macro com textura real do tecido</span>
+          </div>
+        </div>
+
+        <!-- Right: Detailed Technical Specs & WhatsApp CTA -->
+        <div class="modal-info-col">
+          
+          <div class="modal-header-info">
+            <span class="modal-ref-code" id="modalRefCode">REF: TM-000</span>
+            <h3 class="modal-fabric-title" id="modalFabricName">Nome do Tecido</h3>
+            <p class="modal-fabric-desc" id="modalFabricDesc">Pequena descrição editorial do tecido.</p>
+          </div>
+
+          <!-- Technical Specifications Table -->
+          <div class="modal-specs-table">
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-dna"></i> Composição:</span>
+              <span class="spec-val" id="modalSpecComposition">—</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-weight-scale"></i> Gramatura:</span>
+              <span class="spec-val" id="modalSpecWeight">—</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-arrows-left-right"></i> Largura útil:</span>
+              <span class="spec-val" id="modalSpecWidth">—</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-wind"></i> Caimento:</span>
+              <span class="spec-val" id="modalSpecDrape">—</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-hand"></i> Toque / Superfície:</span>
+              <span class="spec-val" id="modalSpecTouch">—</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-eye"></i> Transparência:</span>
+              <span class="spec-val" id="modalSpecTransparency">—</span>
+            </div>
+          </div>
+
+          <!-- Recommended Applications -->
+          <div class="modal-apps-box">
+            <span class="block-label"><i class="fa-solid fa-shirt"></i> Aplicações e Modelagens Ideais:</span>
+            <div class="modal-tags-list" id="modalApplicationsTags">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Care and Handling -->
+          <div class="modal-care-box">
+            <span class="block-label"><i class="fa-solid fa-shield-halved"></i> Cuidados e Manuseio:</span>
+            <p class="modal-care-text" id="modalCareText">Lavagem a seco especializada. Passar a ferro brando do lado avesso.</p>
+          </div>
+
+          <!-- Modal Action (Direct WhatsApp Conversion) -->
+          <div class="modal-action-zone">
+            <button type="button" class="btn btn-wine btn-full btn-modal-wa" id="modalBtnWhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Tenho interesse — falar pelo WhatsApp</span>
+            </button>
+            <span class="modal-action-sub">
+              <i class="fa-solid fa-lock"></i> Canal direto sem intermediação. Tire dúvidas técnicas e solicite metragem.
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Rodapé Institucional (Footer) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      
+      <!-- Coluna 1: Marca & Essência -->
+      <div class="footer-col footer-brand-col">
+        <a href="#inicio" class="brand-logo footer-logo" aria-label="T&M Têxtil Início">
+          <div class="logo-symbol">
+            <span class="symbol-letter">T</span>
+            <span class="symbol-amp">&</span>
+            <span class="symbol-letter">M</span>
+          </div>
+          <div class="logo-text">
+            <span class="brand-name">T&M TÊXTIL</span>
+            <span class="brand-sub">HAUTE TEXTILERIE</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">
+          Referência em curadoria e distribuição de tecidos nobres para alta-costura, alfaiataria fina e confecções contemporâneas. Inspirada na elegância atemporal de Paris e na energia criativa da moda brasileira.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da T&M Têxtil">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="javascript:void(0)" class="social-link footer-wa-trigger" aria-label="WhatsApp da T&M Têxtil">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="mailto:contato@tmtextil.com.br" class="social-link" aria-label="E-mail da T&M Têxtil">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest da T&M Têxtil">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Coluna 2: Navegação Rápida -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#colecao">Catálogo de Tecidos</a></li>
+          <li><a href="#essencia">Nossa Essência</a></li>
+          <li><a href="#inspiracao">Inspiração Editorial</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato & Agendamento</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Categorias de Coleção -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Coleção</h4>
+        <ul class="footer-links">
+          <li><a href="#colecao" data-filter="alfaiataria">Alfaiataria Fina</a></li>
+          <li><a href="#colecao" data-filter="festa">Festa & Gala</a></li>
+          <li><a href="#colecao" data-filter="leves">Sedas & Tecidos Fluidos</a></li>
+          <li><a href="#colecao" data-filter="estruturados">Lãs & Estruturados</a></li>
+          <li><a href="#colecao" data-filter="premium">Linha Premium Royale</a></li>
+          <li><a href="#colecao" data-filter="casual">Linhos Naturais</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Contato & Showroom -->
+      <div class="footer-col footer-contact-col">
+        <h4 class="footer-col-title">Atendimento</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp:</strong>
+              <a href="javascript:void(0)" class="footer-wa-trigger">+55 (11) 99999-9999</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>E-mail:</strong>
+              <a href="mailto:contato@tmtextil.com.br">contato@tmtextil.com.br</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Showroom SP:</strong>
+              <span>Jardins, São Paulo — SP</span>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-earth-europe"></i>
+            <div>
+              <strong>Bureau Paris:</strong>
+              <span>1er Arrondissement, Paris, France</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Institutional Disclaimer -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; 2026 T&M Têxtil — Todos os direitos reservados. Catálogo institucional exclusivo. Sem venda direta ou checkout online.
+        </p>
+        <p class="footer-signature">
+          Design Editorial & Arquitetura de Luxo
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <button type="button" class="floating-wa-btn" id="floatingWhatsAppBtn" aria-label="Falar conosco pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-wa-tooltip">Falar com Consultor Têxtil</span>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/fabrics-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+/* ==========================================================================
+   T&M TÊXTIL — HAUTE TEXTILERIE
+   DESIGN SYSTEM & LUXURY LIGHT THEME (OFF-WHITE & BRANCO)
+   Tipografia: Montserrat (Editorial Moderno) + Bodoni Moda (Didone Alta-Costura)
+   Cores: Off-White Seda, Branco Puro, Azul-Marinho Profundo & Vinho Bordô
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. Paleta de Fundo: Off-White & Branco Luminoso
+     ------------------------------------------------------------------------ */
+  --color-bg-body: #FAF9F6;          /* Fundo principal em tom off-white seda */
+  --color-bg-surface: #FFFFFF;       /* Branco puro para cards, modal e superfícies */
+  --color-bg-alt: #F4F1EA;           /* Off-white quente suave para seções alternadas */
+  --color-bg-subtle: #EAE6DE;        /* Separadores e bordas neutras suaves */
+  --color-bg-card: #FFFFFF;          /* Fundo dos cards de produto e diferenciais */
+  --color-bg-card-hover: #FFFFFF;
+
+  /* ------------------------------------------------------------------------
+     2. Azul-Marinho Institucional (Cor estrutural, títulos e sofisticação)
+     ------------------------------------------------------------------------ */
+  --color-navy-darkest: #060912;     /* Azul-marinho quase preto */
+  --color-navy-base: #0A0F1D;        /* Azul-marinho profundo para títulos e contrastes */
+  --color-navy-surface: #121A2E;     /* Superfície escura para footer e contrastes */
+  --color-navy-card: #FFFFFF;        /* Superfícies de cards em branco puro */
+  --color-navy-border: #E8E4DB;      /* Bordas suaves off-white */
+  --color-navy-border-hover: #D4CEBF;
+
+  /* ------------------------------------------------------------------------
+     3. Acento de Destaque: Vinho / Bordô Editorial
+     ------------------------------------------------------------------------ */
+  --color-wine-dark: #560D1F;
+  --color-wine-base: #78152C;
+  --color-wine-vibrant: #8F1935;
+  --color-wine-bright: #A81E41;
+  --color-wine-glow: rgba(120, 21, 44, 0.25);
+  --color-wine-subtle: rgba(120, 21, 44, 0.08);
+
+  /* ------------------------------------------------------------------------
+     4. Tipografia & Textos (Alto Contraste em Fundo Claro)
+     ------------------------------------------------------------------------ */
+  --color-text-title: #0A0F1D;       /* Azul-marinho profundo para títulos e cabeçalhos */
+  --color-text-body: #374151;        /* Cinza escuro nobre para leitura confortável */
+  --color-text-muted: #6B7280;       /* Cinza médio para descrições secundárias */
+  --color-text-light: #FFFFFF;       /* Branco para botões escuros */
+
+  /* Cores legadas mapeadas para o novo tema claro */
+  --color-offwhite-pure: #0A0F1D;    /* Títulos em azul-marinho profundo */
+  --color-offwhite-light: #1A2233;   /* Subtítulos e contrastes */
+  --color-offwhite-muted: #4B5563;   /* Textos complementares */
+  --color-offwhite-dim: #4B5563;     /* Textos informativos */
+  --color-slate-gray: #6B7280;       /* Textos secundários */
+
+  /* ------------------------------------------------------------------------
+     5. Toque de Alta Costura: Ouro Champagne / Bege Nobre
+     ------------------------------------------------------------------------ */
+  --color-champagne: #9E7B4F;        /* Dourado champagne com bom contraste em fundo claro */
+  --color-champagne-light: #C5A880;
+  --color-champagne-dim: rgba(158, 123, 79, 0.25);
+
+  /* ------------------------------------------------------------------------
+     6. WhatsApp Brand Color
+     ------------------------------------------------------------------------ */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1ea952;
+  --color-whatsapp-glow: rgba(37, 211, 102, 0.25);
+
+  /* ------------------------------------------------------------------------
+     7. Tipografia Inspirada na Imagem de Referência
+     ------------------------------------------------------------------------ */
+  --font-logo-serif: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
+  --font-heading: 'Montserrat', 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-heading-editorial: 'Bodoni Moda', 'Playfair Display', serif;
+  --font-serif: 'Bodoni Moda', 'Playfair Display', serif;
+  --font-heading-alt: 'Montserrat', sans-serif;
+  --font-sans: 'Montserrat', 'Plus Jakarta Sans', -apple-system, sans-serif;
+
+  /* ------------------------------------------------------------------------
+     8. Efeitos de Transição e Sombras em Fundo Claro
+     ------------------------------------------------------------------------ */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --shadow-subtle: 0 2px 14px rgba(10, 15, 29, 0.04);
+  --shadow-elevation: 0 8px 24px rgba(10, 15, 29, 0.08);
+  --shadow-deep: 0 16px 40px rgba(10, 15, 29, 0.12);
+  --shadow-wine: 0 6px 20px rgba(120, 21, 44, 0.28);
+  --shadow-gold: 0 6px 18px rgba(158, 123, 79, 0.2);
+
+  /* ------------------------------------------------------------------------
+     9. Dimensões
+     ------------------------------------------------------------------------ */
+  --container-max-width: 1280px;
+  --header-height: 84px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+}
+
+/* Reset Global e Normalização */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg-body);
+  color: var(--color-text-body);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.65;
+  overflow-x: hidden;
+  position: relative;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-body);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1C9BE;
+  border-radius: 4px;
+  border: 2px solid var(--color-bg-body);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wine-base);
+}
+
+/* Seleção de Texto Estilizada */
+::selection {
+  background-color: var(--color-wine-base);
+  color: #FFFFFF;
+}
+
+/* Elementos Básicos */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Estrutura de Contêiner */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Seções Gerais */
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+/* Tipografia de Cabeçalhos de Seção — Inspirada na Imagem */
+.section-header {
+  margin-bottom: 56px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header.text-center {
+  text-align: center;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-wine-base);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-title);
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: 1.02rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* Ornamento Editorial */
+.title-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.ornament-line {
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-champagne), transparent);
+}
+
+.ornament-diamond {
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background-color: var(--color-wine-base);
+}
+
+/* Botões do Sistema de Design */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: var(--radius-xs);
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Botão Vinho / Bordô (Primário de Destaque) */
+.btn-wine {
+  background: var(--color-wine-base);
+  color: #FFFFFF;
+  border: 1px solid var(--color-wine-dark);
+  box-shadow: 0 4px 14px rgba(120, 21, 44, 0.25);
+}
+
+.btn-wine:hover {
+  background: var(--color-wine-vibrant);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(120, 21, 44, 0.38);
+  color: #FFFFFF;
+}
+
+.btn-wine:active {
+  transform: translateY(0);
+}
+
+/* Botão Contorno Claro / Azul-Marinho */
+.btn-outline-light {
+  background: #FFFFFF;
+  color: var(--color-navy-base);
+  border: 1px solid #D8D2C6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.btn-outline-light:hover {
+  background: var(--color-navy-base);
+  border-color: var(--color-navy-base);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-large {
+  padding: 18px 36px;
+  font-size: 0.92rem;
+}
+
+.btn-full {
+  width: 100%;
+}
